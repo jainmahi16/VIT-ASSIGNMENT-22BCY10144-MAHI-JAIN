@@ -1,0 +1,65 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+.task-header {
+    background-color: #3c6328;
+    height: 60px;
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.task-header h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+    background-color: #3c9e37;
+    color: white;
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+tbody td {
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #d6eaf8;
+    cursor: pointer;
+}
+
+/* Footer Design (Bottom) */
+.footer-design {
+    height: 50px;
+    background: linear-gradient(135deg, #3c6328, #27ae60);
+    clip-path: polygon(0 0, 15% 100%, 100% 100%, 85% 0);
+    margin-top: 20px;
+}

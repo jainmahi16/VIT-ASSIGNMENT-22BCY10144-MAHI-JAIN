@@ -1,0 +1,102 @@
+/* Login Container */
+.login-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Avatar */
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Remember Me Checkbox */
+.remember-me {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+/* Buttons */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.login-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #218838;
+}
+
+.cancel-btn:hover {
+    background-color: #c82333;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.forgot-password:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

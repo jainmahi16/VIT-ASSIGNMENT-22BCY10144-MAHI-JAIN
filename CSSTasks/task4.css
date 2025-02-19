@@ -1,0 +1,123 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+.task-header {
+    background-color: #2c4d1f;
+    height: 60px;
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.task-header h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Side Navigation Bar */
+.sidenav {
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+}
+
+.sidenav:hover {
+    width: 200px;
+}
+
+.sidenav a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidenav a span {
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidenav:hover a span {
+    opacity: 1;
+}
+
+.sidenav a.green {
+    background-color: #3c9e37;
+}
+
+.sidenav a.green:hover {
+    background-color: #2d7e29;
+}
+
+.sidenav a.blue {
+    background-color: #3278c5;
+}
+
+.sidenav a.blue:hover {
+    background-color: #265d98;
+}
+
+.sidenav a.red {
+    background-color: #c53030;
+}
+
+.sidenav a.red:hover {
+    background-color: #9e2424;
+}
+
+.sidenav a.gray {
+    background-color: #555555;
+}
+
+.sidenav a.gray:hover {
+    background-color: #3c3c3c;
+}
+
+/* Main Content Section */
+.content {
+    margin-left: 70px;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer Design (Bottom) */
+.footer-design {
+    height: 50px;
+    background: linear-gradient(135deg, #3c6328, #27ae60);
+    clip-path: polygon(0 0, 15% 100%, 100% 100%, 85% 0);
+    margin-top: 20px;
+}

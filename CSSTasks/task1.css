@@ -1,0 +1,64 @@
+/* Styling for the Table */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #d1e7e7;
+}
+th, td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #a9cfcf;
+    font-weight: bold;
+}
+h2 {
+    text-align: center;
+    color: #004d00;
+}
+
+/* Styling for Shapes Section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.shape {
+    width: 100px;
+    height: 50px;
+    border: 3px solid #7ec850; /* Green border */
+}
+
+/* Standard rectangle */
+.rectangle {
+    border-radius: 0;
+}
+
+/* Slightly rounded rectangle */
+.rounded-rectangle {
+    border-radius: 10px;
+}
+
+/* Fully rounded corners */
+.circular-rectangle {
+    border-radius: 25px;
+}
+
+/* Oval shape */
+.oval {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+}

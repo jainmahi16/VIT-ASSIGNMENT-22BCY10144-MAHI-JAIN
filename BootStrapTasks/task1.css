@@ -1,0 +1,65 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar customization */
+.navbar {
+    background-color: #6c757d !important; /* Gray background */
+}
+.navbar-nav .nav-link {
+    color: #fff !important; /* White text */
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+/* Right-aligned links (SIGNUP, LOGIN) */
+.navbar .ms-auto .nav-link {
+    margin-right: 0; /* No extra margin */
+}
+
+/* Header section */
+.bg-info {
+    background-color: #17a2b8 !important; /* Cyan color */
+}
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Content styling */
+.bg-light {
+    background-color: #f8f9fa !important; /* Light gray background */
+}
+.bg-secondary {
+    background-color: #6c757d !important; /* Sidebar dark gray background */
+    color: white;
+}
+
+/* Content alignment */
+.container-fluid {
+    padding: 0;
+}
+.row {
+    margin: 0;
+}
+
+/* Right sidebar */
+.col-md-3 {
+    text-align: right;
+    padding-top: 20px;
+}
+
+/* Main content */
+.col-md-9 {
+    padding-top: 20px;
+}
+
+/* Additional spacing */
+.p-3 {
+    padding: 1rem !important;
+}
