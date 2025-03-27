@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Date & Time</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f8f9fa;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: white;
+        }
+        .btn-date {
+            background: #ff9f43;
+        }
+        .btn-time {
+            background: #ff4d4d;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .output-box {
+            background: #f1f3f4;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Show Date & Time</h2>
+        <button class="btn btn-date" onclick="showDate()">📅 Show Date</button>
+        <div class="output-box" id="date">-</div>
+
+        <button class="btn btn-time" onclick="showTime()">⏰ Show Time</button>
+        <div class="output-box" id="time">-</div>
+    </div>
+
+    <script>
+        function showDate() {
+            let today = new Date();
+            let formattedDate = today.getDate() + "/" +
+                today.toLocaleString('default', { month: 'long' }) + "/" +
+                today.getFullYear();
+            document.getElementById("date").innerText = formattedDate;
+        }
+
+        function showTime() {
+            let now = new Date();
+            document.getElementById("time").innerText = now.toString();
+        }
+    </script>
+
+</body>
+</html>

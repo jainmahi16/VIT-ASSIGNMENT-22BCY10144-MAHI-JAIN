@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort String Alphabetically</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 420px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            color: #444;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 16px;
+        }
+        .btn-custom {
+            background-color: #ff758c;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+            margin-top: 15px;
+            width: 100%;
+            font-weight: 600;
+            box-shadow: 0px 5px 10px rgba(255, 117, 140, 0.3);
+        }
+        .btn-custom:hover {
+            background-color: #e84664;
+            box-shadow: 0px 7px 15px rgba(232, 70, 100, 0.4);
+        }
+        .result {
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+            margin-top: 20px;
+            background: #fff3f3;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            animation: pop 0.4s ease-in-out;
+        }
+        @keyframes pop {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sort Letters Alphabetically</h2>
+        <input type="text" class="form-control mb-3" id="stringInput" placeholder="Enter text...">
+        <button class="btn btn-custom" onclick="sortString()">Sort String</button>
+        <p class="result" id="result"></p>
+    </div>
+
+    <script>
+        function sortString() {
+            let input = document.getElementById("stringInput").value;
+            if (input.trim() === "") {
+                alert("Please enter a valid string.");
+                return;
+            }
+            let sortedString = input.split("").sort().join("");
+            document.getElementById("result").innerText = sortedString;
+        }
+    </script>
+</body>
+</html>
